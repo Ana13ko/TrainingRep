@@ -5,17 +5,23 @@ public class App {
         Student andrey = new AttentiveStudent("Andrey");
         Student nastya = new AttentiveStudent("Nastya");
         Student dima = new BadStudent("Dima");
+        Teacher vasya = new TeacherOfMathematics("Vasyl");
+        Room a = new LectionRoom();
+        
+        enter(a, andrey);
+        enter(a, nastya);
+        enter(a, dima);
+        enter(a, vasya);
+
+        begin(vasya);
+
         go(andrey);
         go(nastya);
         go(dima);
+    }
 
-        Teacher vasya = new TeacherOfMathematics("Vasyl");
-        begin(vasya);
-
-
-        /*enter(andrey);
-        enter(nastya);
-        enter(vasya);*/
+    private static void enter(Room a, Person somePerson) {
+        a.accept(somePerson);
     }
 
     private static void go(Student someone) {
@@ -27,11 +33,4 @@ public class App {
         System.out.println(String.format("The class starts!"));
         vasya.teach();
     }
-
-
-    /*private static void enter(Room a,Person p) {
-        String x = p.name();
-        /*String y = a.accept();*/
-
-
 }
