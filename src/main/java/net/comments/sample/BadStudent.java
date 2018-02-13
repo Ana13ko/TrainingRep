@@ -7,7 +7,7 @@ public class BadStudent implements Student {
         this.name = name;
     }
 
-    public void learn() {
+    public void learn(Subject subject) {
         System.out.println(this.name + " is sleeping.");
     }
 

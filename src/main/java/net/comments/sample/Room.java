@@ -1,5 +1,7 @@
 package net.comments.sample;
 
 public interface Room {
-    void accept(Person someperson);
+    void accept(String[] students);
+
+    void accept(Teacher teacher);
 }
