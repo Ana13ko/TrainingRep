@@ -1,6 +1,5 @@
 package net.comments;
 
-
 import org.hamcrest.MatcherAssert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -37,5 +36,3 @@ public class Test1 {
         return this.driver[0];
     }
 }
-
-
